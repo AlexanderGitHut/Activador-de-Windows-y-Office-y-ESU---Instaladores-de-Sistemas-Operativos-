@@ -1,0 +1,24 @@
+                                                                Scripts de activación de Microsoft (MAS)
+
+Activador de código abierto de Windows y Office con métodos de activación HWID, Ohook, TSforge y KMS en línea, junto con la solución de problemas avanzada.
+
+
+¿Cómo activar Windows / Office / Actualizaciones extendidas (ESU)?
+Método 1 - PowerShell 
+1. Abrir PowerShell
+Haga clic en el menú Inicio, escriba PowerShell, entonces ábrelo.
+
+2. Copie y pegue el código a continuación, luego presione enter.
+- Para Windows 8, 10, 11: 
+
+irm https://get.activated.win | iex
+
+- Si lo anterior está bloqueado (por ISP/DNS), pruebe esto (necesita Windows 10 u 11 actualizado):
+(Aclaraciones ISP Es nuestro provedor de internet / DNS es un Sistema que traduce nombres de sitios web en direcciones ID, Ejemplo: Nombre Pagina Web:Google.com, IP de pagina Web 8.8.8.8 o 8.8.4.4, si tu router tiene algun DNS configurado y no deja ejecutar el script usa este comando en Power Shell
+
+iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
+
+- Para Windows 7 Y más tarde: 
+
+iex ((New-Object Net.WebClient).DownloadString('https://get.activated.win'))
+
