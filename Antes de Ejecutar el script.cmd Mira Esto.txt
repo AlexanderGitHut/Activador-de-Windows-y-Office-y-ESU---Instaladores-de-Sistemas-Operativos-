@@ -1,0 +1,1 @@
+Antes de Ejecutar el Script Por Favor Desactiva, Proteccion en Tiempo Real en el administrador de Windows Defender 
